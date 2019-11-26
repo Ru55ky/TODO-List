@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face{
+    font-family: 'Merri';
+    src: url(../font/Merriweather-Regular.ttf);
+}
+body{
+    background: #b9afaf;
+}
+.nav-bar{
+    height: 100px;
+    width: 100%;
+    background: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar p{
+    font-size: 38px;
+    color: #fff;
+}
+.nav-bar a{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.test-class{
+    height: 200px;
+    width: 100%;
+    background: #9c2c2c;
+    position: absolute;
+}
+.secondChild{
+    height: 200px;
+    width: 100%;
+    background: #945b5b;
+}
+.parent-input{
+    text-align: center;
+}
+.inp-js{
+    width: 70%;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+}
+.inp-js:hover{
+    box-shadow:1px 2px 9px 4px #2fccc4 ;
+}
+.check-input{
+    width: 140px;
+    border-radius: 8px;
+    height: 45px;
+    background: #1bd662;
+    border: none;
+    font-size: 18px;
+}
+.check-input:hover{
+    box-shadow: 4px 3px 12px 3px #23b347;
+}
+.inp-animation{
+    -webkit-transform: translate(0px, 250px);
+    -webkit-transition-duration: 500ms;
+    transform: translate(0px, 250px);
+    transition-duration: 500ms;
+}
+.btn-close{
+    width: 140px;
+    border-radius: 8px;
+    height: 45px;
+    background: #e92c2c;
+    border: none;
+    font-size: 18px;
+}
+.name-input{
+    width: 70%;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+}
+.name-button{
+    width: 140px;
+    border-radius: 8px;
+    height: 45px;
+    background: #1bd662;
+    border: none;
+    font-size: 18px;
+}
+.hover{
+    display: none;
+}
+.taskName{
+    display: none;
+}
+.empty-message{
+    font-family: 'Merri';
+}
+.emptyName{
+    font-family: 'Merri';
+}
+/*popup*/
+.popup{
+    background: #333333;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.popup-hover{
+    opacity: 0;
+    transition-duration: 800ms;
+    z-index: 0;
+}
+.popup-name{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    background: #d1bca8;
+    text-align: center;
+    margin: 0 auto;
+    transform: translate(0, 250px);
+}
+.popup-name input{
+    width: 65%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+.popup-name button{
+    width: 25%;
+    height: 30px;
+    background: #23b347;
+    border-radius: 5px;
+    border: none;
+}
+.popup-name button, .popup-name input{
+    margin: 45% auto;
+}
+.input-nav{
+    width: 25%;
+    height: 30px;
+    border: none;
+    background: #333333;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Merri';
+}
