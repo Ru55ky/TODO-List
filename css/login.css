@@ -1,0 +1,29 @@
+*{
+    margin: auto;
+    padding: 0%;
+}
+body{
+    background: #ebe4e4;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 450px;
+    margin-top: 10%;
+}
+.input-form{
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.input-form:not(:nth-child(4)):hover{
+    box-shadow: 1px 1px 7px 0px #1998a1;
+}
+.input-form:nth-child(4){
+    background: #15ac4f;
+}
+.input-form:nth-child(4):hover{
+    box-shadow: 1px 1px 10px 0px #5fdd8f;
+}

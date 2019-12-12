@@ -1,3 +1,10 @@
+<?php
+session_start();
+$_SESSION['auth'] = null;
+require_once "PHP/connect.php";
+                                                      
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +24,11 @@
         <div class="nav-bar">
         <p>Todo-list</p>
         <a href="">Придумай задачу</a>
+        <?php echo "<input type='text' class='' name='logout' value='Выйти' />" ?>
         <input type="text" class="input-nav" />
         </div>
 
-        <form method="POST" class="add-form">
+        <form method="GET" class="add-form">
         <div class="parent-input">
         <input type="text" placeholder="Придумай задачу" class="inp-js" required/>
         <button class="check-input">Добавить</button>   

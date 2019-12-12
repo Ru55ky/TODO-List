@@ -46,7 +46,7 @@ btnPopup.addEventListener('click', function(){
  })
 
  if(!mainInput.hasChildNodes.length === 0){
-   hoverMessage.classList.remove('hover')
+   hoverMessage.classList.remove('hover');
  }else if(mainInput.hasChildNodes){
   console.log('есть клоны');
 }
