@@ -1,0 +1,20 @@
+* {
+    margin: auto;
+    padding: 0%;
+}
+body{
+    background: #d1cbcb;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 350px;
+    margin-top: 10%;
+}
+form input{
+    width: 35%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
