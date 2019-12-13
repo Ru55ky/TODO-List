@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "connect.php";
 
 if(!empty($_POST['login']) and !empty($_POST['password']) and !empty($_POST['email'])){
@@ -23,10 +24,12 @@ mysqli_query($link, $query) or die('<p>Неудачная регистрация
 </head>
 <body>
     <form method="POST" action="">
+        <p>Регистрация</p>
         <input name="login" placeholder="Логин" type="text" />
         <input name="password" placeholder="Пароль" type="password" />
         <input name="email" placeholder="Email" type="email" />
         <input type="submit" value="Зарегистрироваться" />
+        <a href='login.php'>Авторизоваться</a>
     </form>
 </body>
 </html>

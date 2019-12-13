@@ -34,6 +34,7 @@ require_once "connect.php";
 
     ?>
     <form method="POST" action="" class="form">
+        <p>Авторизация</p>
         <input type="text" placeholder="Логин" name="login" class="input-form" />
         <input type="password" placeholder="Пароль" name="password" class="input-form" />
         <input type="email" placeholder="Email" name="email" class="input-form" />
