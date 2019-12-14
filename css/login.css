@@ -2,7 +2,12 @@
     margin: auto;
     padding: 0%;
 }
-
+body{
+    background-image: url(../img/rock2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .form{
     display: flex;
     flex-direction: column;
@@ -47,4 +52,5 @@ form a:hover{
 form p{
     font-family: 'Merri';
     font-size: 28px;
+    color: #ffffff;
 }

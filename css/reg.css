@@ -2,7 +2,11 @@
     margin: auto;
     padding: 0%;
 }
-
+body{
+    background-image: url(../img/rock.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 form{
     display: flex;
     flex-direction: column;
