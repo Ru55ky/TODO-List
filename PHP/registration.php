@@ -12,6 +12,9 @@ $query = "INSERT INTO `users` SET login='$login', password='$password', email='$
 
 mysqli_query($link, $query) or die('<p>Неудачная регистрация' . mysqli_error($link) . '</p>');
 };
+if(!empty($query)){
+    echo "<script>window.location = '../thanks.html' ;</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,0 +1,14 @@
+.thanks-popup{
+    height: 450px;
+    width: 650px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+.img{
+    background-image: url(../img/success2.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
