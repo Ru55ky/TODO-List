@@ -21,14 +21,14 @@
     border: none;
     border-radius: 8px;
 }
-.input-form:not(:nth-child(4)):hover{
+
+.input-form:not(:nth-child(5)):hover{
     box-shadow: 1px 1px 7px 0px #1998a1;
-    
 }
-.input-form:nth-child(4){
+.input-form:nth-child(5){
     background: #15ac4f;
 }
-.input-form:nth-child(4):hover{
+.input-form:nth-child(5):hover{
     box-shadow: 1px 1px 10px 0px #5fdd8f;
 }
 form a{
@@ -40,6 +40,9 @@ form a{
     text-align: center;
     text-decoration: none;
     color: black;
+}
+form a:hover{
+    box-shadow:1px 1px 7px 0px #4392dd;
 }
 form p{
     font-family: 'Merri';

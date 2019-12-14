@@ -21,13 +21,13 @@ form input{
     border: none;
     border-radius: 8px;
 }
-form input:nth-child(4){
+form input:nth-child(5){
     background: #15ac4f; 
 }
-form input:nth-child(4):hover{
+form input:nth-child(5):hover{
     box-shadow: 1px 1px 10px 0px #5fdd8f; 
 }
-form input:not(:nth-child(4)):hover{
+form input:not(:nth-child(5)):hover{
     box-shadow: 1px 1px 7px 0px #1998a1;
 }
 form a{

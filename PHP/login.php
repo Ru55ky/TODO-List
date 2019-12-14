@@ -23,10 +23,10 @@ require_once "connect.php";
         $result = mysqli_query($link, $query);
 
         $user = mysqli_fetch_assoc($result);
+        
     
     if(!empty($user)){
         $_SESSION['auth'] = true;
-        
     }else{
         echo "<p>Вы не авторизовались</p>";
     }
@@ -38,10 +38,10 @@ require_once "connect.php";
         <input type="text" placeholder="Логин" name="login" class="input-form" />
         <input type="password" placeholder="Пароль" name="password" class="input-form" />
         <input type="email" placeholder="Email" name="email" class="input-form" />
-        <input type="submit" value="Авторизоваться" name="submit" class="input-form" />
+        <input type='submit' value='Авторизоваться' name='submit' class='input-form'/>  
         <a href="registration.php" class="a-btn">Регистрация</a>
         <?php if(!empty($_SESSION['auth'])){
-            echo "<a href='../index.php'>Перейти</a>";
+                echo "<script> window.location = '../index.php'</script>";
         } ?>
     </form>
    
