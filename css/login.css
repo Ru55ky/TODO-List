@@ -54,3 +54,9 @@ form p{
     font-size: 28px;
     color: #ffffff;
 }
+.non-auth{
+    font-family: 'Merri';
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+}

@@ -1,14 +1,11 @@
 <?php
 session_start();
-$_SESSION['auth'] = null;
+
 require_once "PHP/connect.php";                                                  
 ?>
-<?php if(!empty($_SESSION['auth'])){
-    header('Location: PHP/login.php');
-}else{
-    
-}
- ?>
+<?php if(empty($_SESSION['auth'])){
+    echo"<script>window.location = 'PHP/login.php'</script>";
+}  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,5 +38,6 @@ require_once "PHP/connect.php";
         </div>
         </form>
     <script src="js/main.js"></script>
+ 
 </body>
 </html>

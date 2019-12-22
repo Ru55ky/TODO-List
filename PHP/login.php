@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once "connect.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,12 +25,11 @@ require_once "connect.php";
 
         $user = mysqli_fetch_assoc($result);
         
-    
-    if(!empty($user)){
-        $_SESSION['auth'] = true;
-    }else{
-        echo "<p>Вы не авторизовались</p>";
-    }
+        if(!empty($user)){
+            $_SESSION['auth'] = true;
+        }else{
+            echo "<p class='non-auth' >Вы не авторизованы</p>";
+        }
 }
 
     ?>
@@ -42,8 +42,10 @@ require_once "connect.php";
         <a href="registration.php" class="a-btn">Регистрация</a>
         <?php if(!empty($_SESSION['auth'])){
                 echo "<script> window.location = '../index.php'</script>";
-        } ?>
+        }
+        
+        ?>
     </form>
-   
+    
 </body>
 </html>
